@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Você encontra um pergaminho antigo com uma mensagem enigmática, mencionando um tesouro escondido. Decidido a descobrir a verdade, você escolhe por onde começar.</p>
+            <button class="btn-proximo" data-proximo="1">Explorar o Rio de Janeiro</button>
+            <button class="btn-proximo" data-proximo="2">Visitar as praias de Pernambuco</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você chega ao Rio de Janeiro e decide explorar o Jardim Botânico, onde rumores indicam que há uma pista escondida entre as árvores.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar no Jardim Botânico</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Em Pernambuco, você segue para as praias mais isoladas. Uma marcação estranha em uma rocha chama sua atenção.</p>
+            <button class="btn-proximo" data-proximo="5">Investigar a marcação na rocha</button>
+            <button class="btn-proximo" data-proximo="6">Ignorar e visitar as ruínas próximas</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Entre as árvores do Jardim Botânico, você encontra um baú com um pedaço do mapa da cidade perdida e uma nova pista para seguir até o Amazonas.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem de desistência">
+            <p>Sem coragem para continuar, você decide abandonar a aventura.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Investigando a rocha, você encontra um símbolo que aponta para um local específico em Olinda. Lá, uma pista levará você ao próximo destino.</p>
+            <button class="btn-proximo" data-proximo="7">Ir ao Amazonas com a nova pista</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Nas ruínas, você não encontra nada além de pedras e vegetação. Parece que você precisa voltar para as praias e tentar novamente.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar às praias</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>No Amazonas, você entra na densa floresta e se depara com um rio que se divide em dois. Qual caminho você escolhe?</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pela margem à esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pela margem à direita</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Seguindo pela margem à esquerda, você encontra uma abertura na vegetação que leva diretamente à entrada da cidade perdida!</p>
+            <button class="btn-proximo" data-proximo="11">Entrar na cidade</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>A margem à direita o leva a um pântano perigoso. Você percebe que deve retornar e tentar a outra margem.</p>
+            <button class="btn-proximo" data-proximo="9">Voltar e tentar a margem esquerda</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="cidade perdida">
+            <p>Você descobre a cidade perdida e decide estudar seus segredos, mantendo-a protegida e preservada. Parabéns pela jornada!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
